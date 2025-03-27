@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #333 url(/images/classy_fabric.png);
+}
+
+.wrapper {
+  width: 310px;
+  margin: 40px auto;
+  background: #353535;
+  background: linear-gradient(45deg, #151515, #383838);
+  padding: 20px;
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  position: relative;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 96%;
+  background: white;
+  background: -moz-linear-gradient(left, #151515, #464647 5%, #fff 20%, #4a4a4a 70%);
+  background: -ms-linear-gradient(left, #151515, #464647 5%, #fff 20%, #4a4a4a 70%);
+  background: -o-linear-gradient(left, #151515, #464647 5%, #fff 20%, #4a4a4a 70%);
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#151515), color-stop(0.05, #464647), color-stop(0.2, #fff), color-stop(0.7, #4a4a4a));
+  background: -webkit-linear-gradient(left, #151515, #464647 5%, #fff 20%, #4a4a4a 70%);
+  background: linear-gradient(to right, #151515, #464647 5%, #ffffff 20%, #4a4a4a 70%);
+  top: 0;
+  left: 2%;
+}
+
+.wrapper:before,
+.loader:before {
+  content: "";
+  position: absolute;
+  width: 38px;
+  height: 1px;
+  background: -moz-linear-gradient(left, transparent, rgba(255, 255, 255, 0.7), transparent);
+  background: -ms-linear-gradient(left, transparent, rgba(255, 255, 255, 0.7), transparent);
+  background: -o-linear-gradient(left, transparent, rgba(255, 255, 255, 0.7), transparent);
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), color-stop(0.5, rgba(255, 255, 255, 0.7)), to(transparent));
+  background: -webkit-linear-gradient(left, transparent, rgba(255, 255, 255, 0.7), transparent);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0));
+  top: -1px;
+  left: 15%;
+}
+
+.loader {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.loader:before {
+  top: -19px;
+  left: 10%;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  top: -21px;
+  left: 16.5%;
+  width: 3px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+}
+
+.wrapper p {
+  text-transform: uppercase;
+  color: white;
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 black, 0 1px 0 rgba(189, 189, 189, 0.2);
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.wrapper p:after {
+  width: 220px;
+  height: 160px;
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.1);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  bottom: -20px;
+  right: -20px;
+  border-radius: 100% 0 0.5em 0 / 100% 0 0.5em 0;
+}
+
+.loader li {
+  width: 8px;
+  height: 20px;
+  background: white;
+  border-radius: 30px;
+  position: absolute;
+  top: 40px;
+  left: 46px;
+}
+
+.loader ul {
+  animation: spinner 2s steps(12, end) infinite;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px auto;
+}
+
+.loader li:nth-child(1) {
+  transform: rotate(30deg) translate(0, -30px);
+  background: #fff;
+}
+
+.loader li:nth-child(2) {
+  transform: rotate(60deg) translate(0, -30px);
+  background: #e8e8e8;
+}
+
+.loader li:nth-child(3) {
+  transform: rotate(90deg) translate(0, -30px);
+  background: #dedede;
+}
+
+.loader li:nth-child(4) {
+  transform: rotate(120deg) translate(0, -30px);
+  background: #d2d2d2;
+}
+
+.loader li:nth-child(5) {
+  transform: rotate(150deg) translate(0, -30px);
+  background: #bdbdbd;
+}
+
+.loader li:nth-child(6) {
+  transform: rotate(180deg) translate(0, -30px);
+  background: #a3a3a3;
+}
+
+.loader li:nth-child(7) {
+  transform: rotate(210deg) translate(0, -30px);
+  background: #767676;
+}
+
+.loader li:nth-child(8) {
+  transform: rotate(240deg) translate(0, -30px);
+  background: #616161;
+}
+
+.loader li:nth-child(9) {
+  transform: rotate(270deg) translate(0, -30px);
+  background: #505050;
+}
+
+.loader li:nth-child(10) {
+  transform: rotate(300deg) translate(0, -30px);
+  background: #494949;
+}
+
+.loader li:nth-child(11) {
+  transform: rotate(330deg) translate(0, -30px);
+  background: #424242;
+}
+
+.loader li:nth-child(12) {
+  transform: rotate(0deg) translate(0, -30px);
+  background: #383838;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg) scale(0.6);
+  }
+  100% {
+    transform: rotate(-360deg) scale(0.6);
+  }
+}
